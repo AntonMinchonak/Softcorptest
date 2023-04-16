@@ -1,0 +1,44 @@
+.banner {
+  background-image: url(/img/banner.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+  &__wrap {
+    @include flexC();
+    padding: 20rem 0;
+    max-width: 780px;
+    gap: 8rem;
+
+    @media screen and (max-width:$mobileWidth) {
+      padding: 15rem 0;
+      max-width: 780px;
+      gap: 4rem;
+    }
+  }
+
+  &__text {
+    @include flexC();
+    font-size: 2rem;
+    font-weight: 700;
+    gap: 10px;
+  }
+
+  &__list {
+    @include flexC();
+    gap: 5px;
+    font-weight: 400;
+    list-style: none;
+
+    &-item::before {
+      content: '-';
+      padding: 0 12px
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+}

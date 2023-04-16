@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/dist/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="block">
+        <div class="header__wrap">
+          <div class="logo"><img src="/img/LoremIpsum.Net.svg" alt="logo" /></div>
+          <ul class="header__menu">
+            <li class="header__menu-item header__menu-item--active"><a href="#">Бизнес</a></li>
+            <li class="header__menu-item"><a href="#">О нас</a></li>
+            <li class="header__menu-item"><a href="#">Цена</a></li>
+            <li class="header__menu-item"><a href="#">Оформить заказ</a></li>
+          </ul>
+          <div class="header__burger">
+            <div class="header__burger-line"></div>
+            <div class="header__burger-line"></div>
+            <div class="header__burger-line"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="banner">
+      <div class="block">
+        <div class="banner__wrap">
+          <h1 class="block__page-title"><span class="blue-text">Lorem ipsum</span> dolor sit amet consectetur <span class="blue-text">adipiscing</span></h1>
+          <div class="banner__text">
+            <p class="banner__promo">At vero eos et accusamus et iusto odio dignissimos ducimus!</p>
+            <ul class="banner__list">
+              <li class="banner__list-item">Totam rem aperiam eaque ipsa</li>
+              <li class="banner__list-item">Sit voluptatem accusantium doloremque laudantium</li>
+              <li class="banner__list-item">Sed ut perspiciatis, unde omnis iste natus error</li>
+            </ul>
+          </div>
+          <div class="banner__buttons">
+            <a href="#" class="button">Заказать</a>
+            <a href="#" class="button button--white">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="order">
+      <div class="block">
+        <div class="order__wrap">
+          <div class="order__title">
+            <h2 class="block__title">Оформление заказа</h2>
+            <p class="order__subtitle">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+          </div>
+          <div class="work-scheme order__work-scheme">
+            <div class="work-scheme__item">
+              <div class="work-scheme__img"><img src="/img/search.svg" alt="search"></div>
+              <p class="work-scheme__text">Lorem ipsum dolor sit amet</p>
+            </div>
+            <div class="work-scheme__item">
+              <div class="work-scheme__img"><img src="/img/percent.svg" alt="percent"></div>
+              <p class="work-scheme__text">Lorem ipsum dolor sit amet</p>
+            </div>
+            <div class="work-scheme__item">
+              <div class="work-scheme__img"><img src="/img/plusdoc.svg" alt="plusdoc"></div>
+              <p class="work-scheme__text">Lorem ipsum dolor sit amet</p>
+            </div>
+            <div class="work-scheme__item">
+              <div class="work-scheme__img"><img src="/img/message.svg" alt="message"></div>
+              <p class="work-scheme__text">Lorem ipsum dolor sit amet</p>
+            </div>
+            <div class="work-scheme__item">
+              <div class="work-scheme__img"><img src="/img/money.svg" alt="money"></div>
+              <p class="work-scheme__text">Lorem ipsum dolor sit amet</p>
+            </div>
+          </div>
+          <form class="order__form" oninput="result.value=+inputRange.value+' %'" action="https://google.com" method="post" enctype="multipart/form-data">
+        
+
+            <details class="custom-select">
+              <summary class="input custom-select__title">
+                <input class="custom-select__input" type="radio" name="order" checked title="Выберите тип системы">
+                <input class="custom-select__input" type="radio" name="order" value="Sed ut perspici" id="1" title="Sed ut perspiciatis">
+                <input class="custom-select__input" type="radio" name="order" value="Nemo enim ipsam" id="2" title="Nemo enim ipsam">
+                <input class="custom-select__input" type="radio" name="order" value="Et harum quidem" id="3" title="Et harum quidem">
+                <input class="custom-select__input" type="radio" name="order" value="Temporibus aute" id="4" title="Temporibus autem">
+                <input class="custom-select__input" type="radio" name="order" value="Itaque earum re" id="5" title="Itaque earum rerum">
+              </summary>
+              <ul class="custom-select__popup">
+                <li><label for="1">Sed ut perspiciatis</label></li>
+                <li><label for="2">Nemo enim ipsam</label></li>
+                <li><label for="3">Et harum quidem</label></li>
+                <li><label for="4">Temporibus autem</label></li>
+                <li><label for="5">Itaque earum rerum</label></li>
+              </ul>
+            </details>
+            <input type="text" name="email" class="input" placeholder="Ваш e-mail" />
+            <input type="text" name="username" class="input" placeholder="Ваше имя" />
+            <label class="inputRange" for="inputRange"> 
+              <span>Sed ut perspiciatis, unde omnis iste natus</span>
+              <output class="inputRange__output" name="result" for="inputRange">75%</output>
+              <input class="inputRange__input" type="range" name="amount" id="inputRange" value="75"/>
+            </label>
+            <label class="input-file" for="input-file">
+              <input class="input-file__input" type="file" name="file" id="input-file" />
+              <img src="/img/file.svg" alt="file">
+              <span>Прикрепить файл</span>
+            </label>
+            <input class="button order__submit" type="submit" value="Отправить" class="button" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="block">
+        <div class="footer__wrap">
+          <p class="footer__rights">© 2018 «LoremIpsum.net» Все права защищены.</p>
+          <div class="footer__payment">
+            <div class="footer__item">
+              <img src="/img/qiwi.svg" alt="qiwi" class="footer__payment-img" />
+              <p>Qiwi wallet</p>
+            </div>
+            <div class="footer__item">
+              <img src="/img/yandexM.svg" alt="yandexM" class="footer__payment-img" />
+              <p>Yandex Money</p>
+            </div>
+            <div class="footer__item">
+              <img src="/img/webM.svg" alt="webM" class="footer__payment-img" />
+              <p>Web Money</p>
+            </div>
+          </div>
+
+          <div class="footer__social">
+            <a href="#" class="footer__item">
+              <img src="/img/mail.svg" alt="mail" class="footer__social-img" />
+              <p>info@ipsum228.com</p>
+            </a>
+            <a href="#" class="footer__item">
+              <img src="/img/vk.svg" alt="vk" class="footer__social-img" />
+              <p>Мы вконтакте</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="/dist/index.js"></script>
+  </body>
+</html>

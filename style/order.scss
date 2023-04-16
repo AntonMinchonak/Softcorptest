@@ -1,0 +1,46 @@
+.order {
+  background-image: url(/img/BG.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #272833;
+
+  &__wrap {
+    @include flexC();
+    gap: 80px;
+    padding: 121px 0 151px;
+  }
+
+  &__title {
+    @include flexC();
+    gap: 30px;
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+
+  &__subtitle {
+    color: #BBBBBB;
+  }
+
+  &__work-scheme {
+    color: white;
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    align-items: start;
+
+    @media screen and (max-width:800px) {
+      @include flexC();
+      gap: 30px;
+    }
+  }
+
+  &__submit {
+    grid-column: 2/3;
+    margin-top: 25px;
+    width: 100%;
+  }
+}

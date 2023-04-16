@@ -1,0 +1,16 @@
+.block {
+  margin: 0 auto;
+  max-width: 1172px;
+  width: 100%;
+  padding: 0 20px;
+
+  &__page-title {
+    font-size: 4.8rem;
+    font-weight: 700;
+  }
+
+  &__title {
+    font-size: 3.6rem;
+    font-weight: 700;
+  }
+}

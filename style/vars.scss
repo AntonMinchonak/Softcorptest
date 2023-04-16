@@ -1,0 +1,11 @@
+$accent: #3E9CDC;
+$black: #272733;
+$blueD: #286690;
+$blackL: #3D4050;
+$menuWidthBorder: 780px;
+$mobileWidth: 450px;
+
+@mixin flexC() {
+  display: flex;
+  flex-direction: column;
+}

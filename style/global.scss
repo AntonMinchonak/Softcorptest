@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  color: unset;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+
+  @media screen and (max-width:$mobileWidth) {
+    font-size: 9px;
+  }
+}
+
+body {
+  @include flexC();
+  font-family: 'Lato', sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.blue-text {
+  color: $accent;
+}
+
+a {
+  transition: 0.2s ease-in-out;
+  &:hover {
+    color:$accent;
+  }
+}
