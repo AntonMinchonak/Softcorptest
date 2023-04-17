@@ -19,6 +19,10 @@
     border: 5px solid $blueD;
     display: flex;
     justify-content: center;
+
+    img {
+      max-width: 56px;
+    }
   }
 
 }
