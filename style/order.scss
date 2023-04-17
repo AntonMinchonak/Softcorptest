@@ -39,8 +39,9 @@
   }
 
   &__submit {
-    grid-column: 2/3;
-    margin-top: 25px;
+    grid-column: 1/4;
     width: 100%;
+    max-width: 355px;
+    margin: 25px auto 0;
   }
 }
