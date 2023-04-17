@@ -11,13 +11,8 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "index.js",
-    publicPath: "/dist/",
+    publicPath: "./",
   },
-  // devServer: {
-  //   static: {
-  //     directory: path.join(__dirname, "/"),
-  //   },
-  // },
   plugins: [
     new MiniCssExtractPlugin(),
     new CopyPlugin({
@@ -43,8 +38,6 @@ module.exports = {
   },
   optimization: {
     minimizer: [
-      // For webpack@5 you can use the `...` syntax to extend existing minimizers (i.e. `terser-webpack-plugin`), uncomment the next line
-      // `...`,
       new CssMinimizerPlugin(),
       new TerserPlugin(),
       new HtmlMinimizerPlugin(),
